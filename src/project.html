@@ -1,0 +1,60 @@
+<template>
+  <h1>{{ title }}    
+  <small>{{ vecainais * 9 }}</small>    
+
+
+
+
+
+
+
+<div v-if="cipars == 'zals' || cipars == 'sarkans'">
+<div v-if="cipars == 'zals'">
+
+  pareizi
+</div>
+<div v-else>
+  nepareizi
+</div>
+</div>
+
+
+
+
+
+
+
+
+  </h1>
+  <ul> 
+    <li><a href="#">home</a></li> 
+    <li><a href="#">par mums</a></li>  
+    <li><a href="#">kontakti</a></li> 
+    <li><a href="#">adrese</a></li>
+  </ul> 
+  <input v-model="cipars"/> 
+  cipars:{{cipars}} 
+  <div v-if="cipars > 2"
+</template>
+
+<script>  
+export default {
+  data()  {
+    return {
+      title:"Mans title" ,  
+      vecainais: 5/7 ,  
+      cipars: 4
+    }
+  }
+}
+
+</script>
+
+<style>   
+body {  
+ backraund :blue;
+
+}
+
+
+</style>
